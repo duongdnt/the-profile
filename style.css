@@ -1,0 +1,409 @@
+                * {
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                    font-family: 'PT Mono', monospace;
+                }
+                
+                html {
+                    scroll-behavior: smooth;
+                }
+                
+                #header {
+                    width: 100vw;
+                    height: 55vh;
+                    background: rgb(86, 99, 197);
+                    background: linear-gradient(90deg, rgba(86, 99, 197, 1) 0%, rgba(239, 187, 187, 1) 100%);
+                }
+                
+                .nav-bar {
+                    width: 100%;
+                    background: rgb(86, 99, 197);
+                    background: linear-gradient(90deg, rgba(86, 99, 197, 1) 0%, rgba(239, 187, 187, 1) 100%);
+                    display: flex;
+                    flex-direction: row;
+                    list-style-type: none;
+                    padding-left: 40%;
+                    justify-content: space-around;
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                    padding-right: 10%;
+                    position: fixed;
+                    z-index: 1;
+                }
+                
+                .icon {
+                    display: none;
+                    position: absolute;
+                    z-index: 2;
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: rgba(255, 255, 255, 0.9);
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    flex-direction: column;
+                    z-index: 1;
+                    padding: 10px 0 10px 40px;
+                }
+                
+                .dropdown-content a {
+                    color: black;
+                }
+                
+                .fas {
+                    font-size: 32px;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    font-size: 0.9rem;
+                }
+                
+                a:hover {
+                    color: grey;
+                }
+                
+                .container {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+                .header-content {
+                    color: white;
+                    padding: 100px 50px;
+                    height: 100%;
+                }
+                
+                h1 {
+                    font-size: 4rem;
+                }
+                
+                .title {
+                    font-size: 1.5rem;
+                    margin-bottom: 30px;
+                }
+                
+                .avatar {
+                    width: 40%;
+                }
+                
+                p {
+                    padding: 5px;
+                    line-height: 2rem;
+                }
+                
+                .social-media {
+                    padding: 20px 0px;
+                }
+                
+                .fab {
+                    font-size: 2rem;
+                    padding-right: 20px;
+                }
+                
+                .avatar {
+                    position: relative;
+                }
+                
+                .avatar img {
+                    width: 70%;
+                    position: absolute;
+                    top: 100px;
+                    left: 50px;
+                }
+                
+                #about-me {
+                    padding: 150px 300px 100px 300px;
+                }
+                
+                #skill {
+                    padding: 100px 300px;
+                }
+                
+                .wrapper {
+                    margin-top: 40px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    row-gap: 30px;
+                    justify-items: center;
+                }
+                
+                .box-item {
+                    border-radius: 0.5em;
+                    width: 150px;
+                    text-align: center;
+                    color: white;
+                    padding: 20px;
+                    background: rgb(86, 99, 197);
+                    background: linear-gradient(90deg, rgba(86, 99, 197, 1) 0%, rgba(239, 187, 187, 1) 100%);
+                }
+                
+                #project {
+                    padding: 100px 200px;
+                }
+                
+                #project h1 {
+                    padding-left: 100px;
+                }
+                
+                .card-grid {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                
+                .card-item {
+                    width: 300px;
+                    border: 1px solid grey;
+                }
+                
+                .card-img {
+                    width: 100%;
+                }
+                
+                .card-img img {
+                    width: 100%;
+                }
+                
+                .card-text {
+                    padding: 10px;
+                }
+                
+                .skill-learnt p {
+                    display: inline;
+                    border: grey 1px solid;
+                }
+                
+                #education {
+                    margin-top: 80px;
+                    padding: 0 300px;
+                }
+                
+                #education h1 {
+                    margin-bottom: 20px;
+                }
+                
+                .education-item h2 {
+                    margin-top: 30px;
+                }
+                
+                #contact {
+                    margin-top: 80px;
+                    text-align: center;
+                    padding: 50px 300px;
+                    background: rgb(86, 99, 197);
+                    background: linear-gradient(90deg, rgba(86, 99, 197, 1) 0%, rgba(239, 187, 187, 1) 100%);
+                }
+                
+                .contact {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .contact input {
+                    align-self: center;
+                    width: 500px;
+                    margin: 10px;
+                    padding: 20px;
+                    font-size: 0.9rem;
+                }
+                
+                .send-button {
+                    margin: 10px;
+                    font-size: 0.9rem;
+                    width: fit-content;
+                    align-self: center;
+                    padding: 20px 40px;
+                    border-radius: 0.3rem;
+                }
+                
+                @media all and (max-width: 1200px) {
+                    #header {
+                        height: 50vh;
+                    }
+                    .container {
+                        height: 100%;
+                    }
+                    .nav-bar a {
+                        font-size: 0.7rem;
+                    }
+                    #header h1 {
+                        font-size: 2rem;
+                    }
+                    .title {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: 0.9rem;
+                        line-height: 2rem;
+                    }
+                    #about-me {
+                        padding: 50px 100px 0px 100px;
+                    }
+                    #skill {
+                        padding: 100px;
+                    }
+                    #project {
+                        padding: 0 100px;
+                    }
+                    #project h1 {
+                        padding: 0;
+                    }
+                    #education {
+                        padding: 0 100px;
+                    }
+                }
+                
+                @media all and (max-width: 1100px) {
+                    .card-item {
+                        width: 250px;
+                        margin: 5px;
+                    }
+                }
+                
+                @media all and (max-width: 740px) {
+                    .nav-bar {
+                        padding-left: 10%;
+                    }
+                    #header p {
+                        font-size: 0.8rem;
+                        line-height: 1.5rem;
+                    }
+                    .box-item {
+                        width: 100px;
+                        font-size: 0.7rem;
+                    }
+                    .card-grid {
+                        margin-top: 50px;
+                        flex-direction: column;
+                    }
+                    .card-item {
+                        margin-bottom: 20px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    #contact {
+                        padding: 50px 100px;
+                    }
+                    #contact h2 {
+                        font-size: 1rem;
+                    }
+                }
+                
+                @media all and (max-width: 575px) {
+                    #about-me {
+                        padding: 50px;
+                    }
+                    #skill {
+                        padding: 50px;
+                    }
+                    #project {
+                        padding: 50px;
+                    }
+                    #project p {
+                        font-size: 0.7rem;
+                        line-height: 1.5rem;
+                        margin: 5px;
+                    }
+                    .skill-learnt {
+                        display: flex;
+                        flex-direction: row;
+                        align-content: space-around;
+                    }
+                    #education {
+                        padding: 0 50px;
+                    }
+                    #contact {
+                        padding: 50px;
+                    }
+                    #contact input {
+                        width: 80%;
+                    }
+                }
+                
+                @media all and (max-width: 465px) {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    .avatar {
+                        display: none;
+                    }
+                    .nav-bar {
+                        padding-top: 10px;
+                        height: 60px;
+                        background: rgba(255, 255, 255, 0);
+                    }
+                    .title {
+                        margin: 0;
+                    }
+                    .social-media {
+                        padding: 10px 0;
+                    }
+                    #header p {
+                        line-height: 1.5rem;
+                    }
+                    .fab {
+                        font-size: 2rem;
+                        padding: 0;
+                    }
+                    .nav-bar li a {
+                        display: none;
+                    }
+                    .nav-bar.responsive .dropdown-content {
+                        display: flex;
+                    }
+                    .icon {
+                        display: block;
+                    }
+                    .nav-bar.responsive .icon {
+                        color: black;
+                    }
+                    #header {
+                        height: 45vh;
+                    }
+                    .header-content {
+                        width: 320px;
+                        padding: 50px 35px;
+                    }
+                    .wrapper {
+                        grid-template-columns: 1fr 1fr;
+                    }
+                    .card-grid {
+                        flex-direction: column;
+                    }
+                    .card-item {
+                        margin-bottom: 20px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .card-text {
+                        text-align: center;
+                    }
+                    .skill-learnt {
+                        display: flex;
+                        flex-direction: row;
+                        align-content: space-around;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+                    #contact {
+                        padding: 20px 10px;
+                    }
+                }

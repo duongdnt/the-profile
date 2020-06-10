@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f61b07ae0e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- the header -->
+    <div id="header">
+        <!-- navigation bar  -->
+        <ul class="nav-bar">
+            <li><a href="#header">About me</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <a href="#header">About me</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#project">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact me</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            </div>
+        </ul>
+        <!-- avatar -->
+        <div class="container">
+            <div class="avatar">
+                <img src="images/avatar.png">
+            </div>
+            <!-- header's content -->
+            <div class="header-content">
+                <h1>DUONG DOAN</h1>
+                <p class="title">aspiring web developer</p>
+                <p>PHONE: 045 143 0403</p>
+                <p>EMAIL: thuyduong.doannguyen@gmail.com </p>
+                <!-- social-media links -->
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about me section     -->
+    <div id="about-me">
+        <h1>Hi,</h1><br>
+        <p>
+            I am a self-taught developer who are inspired to build beautiful and versatile websites. I started to code as a hobbyist and to automate as well as digitalise things in my previous jobs, but during the journey I have found joy and excitement. Therefore
+            I have switched and dig deeper into the development playground. After being solo in most of my projects, I am looking for an organization to apply things that I have learnt, and to cooperate as a team member. Are you looking for an aspiring
+            developer to take onboard?
+        </p>
+    </div>
+    <div id="skill">
+        <h1>Skill</h1>
+        <div class="wrapper">
+            <div class="box-item">html</div>
+            <div class="box-item">css</div>
+            <div class="box-item">python</div>
+            <div class="box-item">javascript</div>
+            <div class="box-item">git</div>
+            <div class="box-item">sketch</div>
+        </div>
+    </div>
+    <!-- project section -->
+    <div id="project">
+        <h1>My projects</h1>
+        <div class="card-grid">
+            <div class="card-item">
+                <div class="card-img">
+                    <img src="images/project1.png">
+                </div>
+                <div class="card-text">
+                    <h2>background generator</h2>
+                    <p>a website that generates background gradient color on your choice. simple. fun.</p>
+                    <div class="skill-learnt">
+                        <p>html</p>
+                        <p>css</p>
+                        <p>regex</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card-img">
+                    <img src="images/project2.png">
+                </div>
+                <div class="card-text">
+                    <h2>the birches</h2>
+                    <p>website for my own airbnb business, created mainly to experiment css and bootstrap</p>
+                    <div class="skill-learnt">
+                        <p>html</p>
+                        <p>css</p>
+                        <p>bootstrap</p>
+                        <p>javascript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card-img">
+                    <img src="images/project3.png">
+                </div>
+                <div class="card-text">
+                    <h2>furry brocolli</h2>
+                    <p>a python programme that returns authors' names and emails from a bunch of provided links</p>
+                    <div class="skill-learnt">
+                        <p>python</p>
+                        <p>regex</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Education section -->
+    <div id="education">
+        <h1>Education</h1>
+        <div class="education-item">
+            <h2>BACHELOR OF INTERNATIONAL BUSINESS ADMINISTRATION</h2>
+            <p class="time">2012 - 2016</p>
+            <p class="school">LAHTI UNIVERSITY OF APPLIED SCIENCES</p>
+        </div>
+        <div class="education-item">
+            <h2>THE COMPLETE WEB DEVELOPER IN 2019: ZERO TO MASTERY </h2>
+            <p class="time">2019 - ON GOING</p>
+            <p class="school">UDEMY (ONLINE COURSE)</p>
+        </div>
+        <div class="education-item">
+            <h2>THE COMPLETE PYTHON DEVELOPER 2020: ZERO TO MASTERY</h2>
+            <p class="time">MARCH 2020 - MAY 2020 </p>
+            <p class="school">UDEMY (ONLINE COURSE)</p>
+        </div>
+        <div class="education-item">
+            <h2>FULLSTACK OPEN 2020</h2>
+            <p class="time">MAY 2020 - ON GOING</p>
+            <p class="school">UNIVERSITY OF HELSINKI (ONLINE COURSE)</p>
+        </div>
+    </div>
+    <!-- contact section  -->
+    <div id="contact">
+        <h2>get in touch</h2>
+        <div class="contact">
+            <form class="contact">
+                <input type="text" placeholder="your email">
+                <input type="text" placeholder="your message">
+            </form>
+            <button class="send-button">send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
